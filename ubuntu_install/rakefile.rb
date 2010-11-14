@@ -13,10 +13,15 @@ end
 
 task :dev_node do 
     puts "Install dev tools"
+    sh "git clone git://github.com/ry/node.git ~/dev/node"
+    sh "~/dev/node/configure"
+    sh "~dev/node/make"
 end
 
 task :github do 
     puts "cloning src"
+    sh "git clone git@github.com:garrensmith/Jody.git ~/dev/Jody"
+    sh "git clone git@github.com:garrensmith/BuildMachine.git ~/dev/BuildMachine"
 end
 
 task :entertainment do 

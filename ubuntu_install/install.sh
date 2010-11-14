@@ -10,6 +10,9 @@ sudo apt-get install curl
 echo "Install ruby"
 sudo apt-get install ruby rake irb
 
+git clone git@github.com:garrensmith/Scripts.git ~/dev/Scripts
+cd ~/dev/Scripts/ubuntu_install
+
 rake
 
 
