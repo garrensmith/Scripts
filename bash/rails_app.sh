@@ -20,7 +20,7 @@ gem 'jquery-rails'
 
 group :development, :test do
   gem 'autotest'
-  gem "rspec-rails", ">= 2.2.1"
+  gem 'rspec-rails', '>= 2.0.0'
 end
 
 
@@ -29,13 +29,12 @@ group :cucumber do
   gem 'database_cleaner'
   gem 'cucumber-rails'
   gem 'cucumber', '>= 0.7.3'
-  gem "rspec-rails", ">= 2.2.1"
+  gem 'rspec-rails', '>= 2.0.0'
   gem 'spork'
   gem 'launchy'    # So you can do Then show me the page
 end  
 
 EOF
-
 
 bundle install
 
