@@ -16,7 +16,15 @@ cd $1
 
 
 cat > ./Gemfile << EOF
+source 'http://rubygems.org'
+
 gem 'jquery-rails'
+
+gem 'compass', '>= 0.10.2'
+gem 'compass-960-plugin', '>= 0.0.1' ,:require => 'ninesixty'
+gem 'haml-rails', '>= 0.0.1'
+gem 'nifty-generators', '>= 0.0.1'
+
 
 group :development, :test do
   gem 'autotest'
@@ -41,5 +49,14 @@ bundle install
 rails generate jquery:install
 rails generate rspec:install
 rails generate cucumber:install --rspec --capybara
+
+compass init rails -r ninesixty --using 960
+
+rm public/index.html
+rm public/images/rails.png
+
+rm app/views/layouts/application.html.erb
+
+rails g nifty:layout --haml
 
 
