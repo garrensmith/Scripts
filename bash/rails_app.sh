@@ -19,6 +19,7 @@ cat > ./Gemfile << EOF
 source 'http://rubygems.org'
 
 gem 'jquery-rails'
+gem 'sqlite3-ruby', :require => 'sqlite3'
 
 gem 'compass', '>= 0.10.2'
 gem 'compass-960-plugin', '>= 0.0.1' ,:require => 'ninesixty'

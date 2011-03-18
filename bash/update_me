@@ -1,0 +1,5 @@
+rvm get head
+rvm reload
+gem update
+npm update
+brew update
