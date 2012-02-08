@@ -4,3 +4,4 @@ gem update --no-ri --no-rdoc
 npm -g update
 brew update
 brew outdated
+brew upgrade
