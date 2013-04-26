@@ -1,5 +1,3 @@
-rvm get head
-rvm reload
 gem update --no-ri --no-rdoc
 npm -g update
 brew update
